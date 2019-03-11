@@ -16,6 +16,7 @@ public class ServerResponseInitializer implements ServletContainerInitializer {
 		ServletContainer servletContainer = null;
 
 		servletContainer = new ServletContainer();
+		System.out.println("Initializing....");
 		ServletRegistration.Dynamic config = ctx.addServlet("jersey", servletContainer);
 		config.setInitParameter("jersey.config.server.provider.packages", "com.sr.resource");
 		config.addMapping("/api/*");

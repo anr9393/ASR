@@ -57,6 +57,12 @@
 			<artifactId>jersey-hk2</artifactId>
 			<version>${rs-version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<version>${rs-version}</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>ServerResponse</finalName>
